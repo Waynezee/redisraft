@@ -1313,7 +1313,7 @@ static raft_entry_t **raft_get_entries(raft_server_t *me,
                                        raft_index_t *n_etys)
 {
 
-    const int max_entries_in_append_req = 64 * 1024;
+    const int max_entries_in_append_req = 1;
     raft_index_t n;
 
     /* If callback is not implemented, fetch entries from log implementation. */
